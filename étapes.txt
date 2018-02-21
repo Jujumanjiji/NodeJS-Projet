@@ -1,0 +1,5 @@
+1/ l'utilisateur doit taper la commande
+2/ La commande s'exécute et parcours le système de l'utilisateur
+3/ lors de son parcours un scan complet de l'OS est fait et tri les fichiers par tailles
+4/ Les fichiers sont alors triés et mis dans l'ordre alphabétiques par taille
+5/ On affiche tout sur le CLI dans un tableau.
