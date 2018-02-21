@@ -23,7 +23,8 @@ if(program.AnnoyingFile)
 		'Scan the complete system (using tree)',
 		'Scan one folder',
 		]
-	}).then((answers)=>{
+	})
+	.then((answers)=>{
 	console.log(answers)
 }
 
