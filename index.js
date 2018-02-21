@@ -8,7 +8,7 @@ const Table = require('cli-table');
 const program = require('commander')
 
 program.version('1.0.0')
-.option('-s, --AnnoyingFile', 'Start the scan')
+.option('-s, --AnnoyingFile', 'Start scan')
 
 program.parse(process.argv)
 
@@ -20,52 +20,14 @@ if(program.AnnoyingFile)
 		name: 'choices',
 		message: 'What do you want to do today ?',
 		choices: [
-		'Scan the complete system (using tree)',
-		'Scan one folder',
+		'1 : Scan the complete system (using tree)',
+		'2 : Scan one folder',
 		]
 	}])
 	.then((answers)=>{
 		console.log(answers)
 	});
 }
-
-
-/*
-  {
-    type: 'rawlist',
-    name: 'beverage',
-    message: 'You also get a free 2L beverage',
-    choices: ['Pepsi', '7up', 'Coke']
-  },
-  */
-
-/*inquirer.prompt([
-{
-	type:'input',
-	message:'Entrez votre nom d\'utilisateur',
-	name:'username'
-},
-{
-	type:'password',
-	message:'Entrez votre mot de passe',
-	name:'password'
-},
-{
-	type:'checkbox',
-	message:'Que voulez-vous sauvegarder ?',
-	name:'foldersToSave',
-	choices: [
-	'Mes Documents',
-	'Mon bureau',
-	'Ma musique',
-	]
-}
-]).then((answers)=>{
-	console.log(answers)
-	})
-*/
-
-
 /*function getFileInfoFromFolder(route) {
 	const files = fs.readdirSync(route,'utf8');
 	const response = [];
