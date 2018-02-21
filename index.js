@@ -15,31 +15,29 @@ program.parse(process.argv)
 if(program.AnnoyingFile)
 {
 	inquirer.prompt([
-	 {
-		type: 'rawlist',
+	{
+		type: 'list',
 		name: 'choices',
 		message: 'What do you want to do today ?',
 		choices: [
 		'Scan the complete system (using tree)',
 		'Scan one folder',
 		]
-	})
+	}])
 	.then((answers)=>{
-	console.log(answers)
+		console.log(answers)
+	});
 }
 
 
+/*
   {
     type: 'rawlist',
     name: 'beverage',
     message: 'You also get a free 2L beverage',
     choices: ['Pepsi', '7up', 'Coke']
   },
-
-
-else {
-	program.help();
-}
+  */
 
 /*inquirer.prompt([
 {
